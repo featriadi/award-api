@@ -5,14 +5,21 @@ export async function readAwards(req, res) {
         let findArgs = {};
 
         for (const key in req.query) {
+            const keys = req.query[key].split(",")
+
             if(key === "minprice" || key === "maxprice"){
                 findArgs["point"] = {
                     $gte: req.query.minprice ? req.query.minprice : 0,
                     $lte: req.query.maxprice ? req.query.maxprice : 1,
                 }
             }
+            else if(keys[0] !== '') {
+                findArgs[key] = {
+                    $in: keys
+                }
+            }
             else {
-                findArgs[key] = req.query[key]
+                continue
             }
         }
 
