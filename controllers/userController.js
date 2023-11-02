@@ -24,9 +24,9 @@ export async function login(req, res) {
         });
 
         if(!user){
-            return res.status(404).json({
+            return res.status(401).json({
                 status: 'error',
-                message: 'user not found'
+                message: 'Email Address is not exists'
             });
         }
 
@@ -34,6 +34,7 @@ export async function login(req, res) {
         const refreshToken  = jwt.sign({ data: user }, process.env.JWT_SECRET_REFRESH_TOKEN, { expiresIn: process.env.JWT_REFRESH_TOKEN_EXPIRED  });
 
         return res.status(201).json({
+            "data": user,
             "accessToken": accessToken,
             "refreshToken": refreshToken,
         });
