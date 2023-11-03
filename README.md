@@ -77,7 +77,6 @@ example body:
 example return:
 ```http
 {
-    "email": "spongebob@gmail.com",
-    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1NDA4MTJlYzk4NzIyNGNlYmU0M2RiOSIsIm5hbWUiOiJTcG9uZ2Vib2IgU3F1YXJlUGFudHMiLCJlbWFpbCI6InNwb25nZWJvYkBnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2OTg5NzEyMjMsImV4cCI6MTY5OTA1NzYyM30.WKvI7hcHloLvRQQ8EwSdoR2A_vgOBN28EdgeChXAj0o"
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1NDA4MTJlYzk4NzIyNGNlYmU0M2RiOSIsIm5hbWUiOiJTcG9uZ2Vib2IgU3F1YXJlUGFudHMiLCJlbWFpbCI6InNwb25nZWJvYkBnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2OTg5NzI0NzIsImV4cCI6MTY5ODk3NjA3Mn0.wh1ryOtModBR-jTsCpvgu9HbQvpmiW0auwzn1ypAmrg"
 }
 ```
