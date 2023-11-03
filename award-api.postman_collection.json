@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "5ce38cb2-f50b-4e9f-8b21-4a224537354a",
+		"name": "award-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29755778"
+	},
+	"item": [
+		{
+			"name": "Award",
+			"item": [
+				{
+					"name": "Read All Awards",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1NDA4MTJlYzk4NzIyNGNlYmU0M2RiOSIsIm5hbWUiOiJTcG9uZ2Vib2IgU3F1YXJlUGFudHMiLCJlbWFpbCI6InNwb25nZWJvYkBnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2OTg5NzExNjMsImV4cCI6MTY5ODk3NDc2M30.I9bO-YESQEiYwIJuIod_Ka7QNP-aRM44ZX8TugidML0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/awards?type=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"awards"
+							],
+							"query": [
+								{
+									"key": "minprice",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "maxprice",
+									"value": "1000000",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"spongebob@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/v1/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"spongebob@gmail.com\",\r\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1NDA4MTJlYzk4NzIyNGNlYmU0M2RiOSIsIm5hbWUiOiJTcG9uZ2Vib2IgU3F1YXJlUGFudHMiLCJlbWFpbCI6InNwb25nZWJvYkBnbWFpbC5jb20iLCJfX3YiOjB9LCJpYXQiOjE2OTg5NzEyMjMsImV4cCI6MTY5OTA1NzYyM30.WKvI7hcHloLvRQQ8EwSdoR2A_vgOBN28EdgeChXAj0o\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/v1/auth/refresh-token"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
