@@ -24,16 +24,25 @@ const seedAwards = [
         "name": "Gift Card IDR 1.000.000",
         "type": "vouchers",
         "point": 500000,
+        "img": "http://localhost:8000/voucher.jpg",
     },
     {
         "name": "Gift Card IDR 500.000",
         "type": "vouchers",
         "point": 250000,
+        "img": "http://localhost:8000/voucher.jpg",
     },
     {
         "name": "Old Fashion Cake",
         "type": "products",
         "point": 100000,
+        "img": "http://localhost:8000/voucher.jpg",
+    },
+    {
+        "name": "Retro Fashion Cake",
+        "type": "giftcards",
+        "point": 50000,
+        "img": "http://localhost:8000/voucher.jpg",
     },
 ]
 

@@ -8,12 +8,16 @@ const awardScheme = new Schema({
     },
     type: {
         type: String,
-        enum: ['vouchers', 'products', 'giftcard'],
+        enum: ['vouchers', 'products', 'giftcards'],
         required: true,
     },
     point: {
         type: Number,
         required: true,
+    },
+    img: {
+        type: String,
+        required: false,
     },
 })
 
