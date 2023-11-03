@@ -9,7 +9,7 @@ MONGOURL="" #your mongodb url
 JWT_SECRET_ACCESS_TOKEN="" #your jwt secret for access token
 JWT_SECRET_REFRESH_TOKEN="" #your jwt secret for refresh token
 JWT_ACCESS_TOKEN_EXPIRED="" #your jwt access token valid periode, ex: 1d (for 1 day), 1h (for 1 hour)
-JWT_REFRESH_TOKEN_EXPIRED="" #your jwt access token valid periode, ex: 1d (for 1 day), 1h (for 1 hour)
+JWT_REFRESH_TOKEN_EXPIRED="" #your jwt refresh token valid periode, ex: 1d (for 1 day), 1h (for 1 hour)
 ```
 
 ## 2. Run Migration and Seeder
