@@ -1,11 +1,23 @@
 # award-api
 
-## 1. Run Migration and Seeder
+## 1. Setup .env
+adjust the environment by create new file .env
+```bash
+PORT=8000 #your desire port for the api
+MONGOURL="" #your mongodb url 
+
+JWT_SECRET_ACCESS_TOKEN="" #your jwt secret for access token
+JWT_SECRET_REFRESH_TOKEN="" #your jwt secret for refresh token
+JWT_ACCESS_TOKEN_EXPIRED="" #your jwt access token valid periode, ex: 1d (for 1 day), 1h (for 1 hour)
+JWT_REFRESH_TOKEN_EXPIRED="" #your jwt access token valid periode, ex: 1d (for 1 day), 1h (for 1 hour)
+```
+
+## 2. Run Migration and Seeder
 ```bash
 npm run seed
 ```
 
-## 2. Run The Application
+## 3. Run The Application
 ```bash
 npm run start
 ```
@@ -14,7 +26,7 @@ or run using nodemon
 nodemon start
 ```
 
-## 3. Test The API
+## 4. Test The API
 you can use postman collection that included on this repo.
 
 
