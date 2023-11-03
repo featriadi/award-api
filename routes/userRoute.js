@@ -6,7 +6,7 @@ import {
 
 const router = Router()
 
-router.post('/login', login)
-router.post('/refresh-token', refreshToken)
+router.post('/auth/login', login)
+router.post('/auth/refresh-token', refreshToken)
 
 export default router

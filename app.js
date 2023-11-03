@@ -16,8 +16,8 @@ connection()
 import userRoutes from './routes/userRoute.js'
 import awardRoutes from './routes/awardRoute.js'
 
-app.use(userRoutes)
-app.use(awardRoutes)
+app.use('/api/v1', userRoutes)
+app.use('/api/v1', awardRoutes)
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
